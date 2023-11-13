@@ -2,4 +2,9 @@
 <mat-slide-toggle>Toggle me!</mat-slide-toggle>
 <input id="input_address" type="text" [(ngModel)]="inputaddress" />
 <button (click)="getAddress()" >Test API Addres</button>
+<p *ngFor="let address of resultado">
+    {{ address.display_name }}, {{ address.lon }} - {{ address.lat }}
+</p>
+
 <button (click)="getLocation()" >Test GPS</button>
+<span>{{"Las coordenadas de tu dispositivo es: "+coords}}</span>
