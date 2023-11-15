@@ -1,4 +1,3 @@
-
 <style>
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
@@ -168,12 +167,20 @@
 </style>
 <main class="main">
   <div class="content">
-    <div>   
+    <div>
       <app-com-selector></app-com-selector>
     </div> <!-- Selector -->
-    <div>    </div> <!-- Contenido Principal -->
-    <div>    </div> <!-- Contenido Personalizado -->
   </div>
+
+  <div class="content-horizontal">
+    <div class="main-content">
+      <h1>Contenido Principal</h1>
+    </div> <!-- Contenido Principal -->
+    <div class="aditional-content">
+      <h1>Contenido Adicional</h1>
+    </div> <!-- Contenido Personalizado -->
+  </div>
+
 </main>
 
 <router-outlet></router-outlet>
