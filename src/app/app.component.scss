@@ -1,0 +1,22 @@
+.main{
+    display: block;
+}
+
+.content{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-horizontal{
+    display: inline-flex;
+    .main-content{
+        margin: 10px;
+        border-color: red;
+        border-width: 3px;
+    }
+    .aditional-content{
+        margin: 10px;
+        border-color: black;
+        border-width: 3px;
+    }
+}
